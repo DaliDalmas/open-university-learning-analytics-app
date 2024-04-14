@@ -15,3 +15,9 @@ PW=gdpr
 DB=open_university
 PORT=5432
 ```
+
+## data model
+
+Source: https://www.kaggle.com/datasets/mexwell/open-university-learning-analytics
+
+<img title="data model" src="data_model.png">
