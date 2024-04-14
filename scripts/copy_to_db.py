@@ -31,7 +31,9 @@ class CopyToDb:
             if_exists='replace',
             dtype=self.dtype_schema
         )
-        log.info(f'Data written to {self.table_name} successfully at {datetime.datetime.now()}')
+        log.info(
+            f'Data written to {self.table_name} successfully at {datetime.datetime.now()}'
+            )
 
 
 if __name__=='__main__':
