@@ -1,6 +1,29 @@
 from sqlalchemy import types
 from copy_to_db import CopyToDb
 
+'''
+Explanation of this piece of code from chatgpt
+----------------------------------------------
+This code is for transferring data from various CSV files into a database. Here's a breakdown:
+
+It starts by defining the structure of the data that will be inserted into the database tables. 
+This structure includes the names of the columns and the types of data they contain (like text, numbers, etc.).
+
+Then, it creates instances of a class called CopyToDb for each set of data to be transferred. 
+These instances are created with parameters specifying the location of the CSV file containing the data, 
+the data structure (defined earlier), and the name of the database table where the data will be stored.
+
+After creating these instances, it calls a method called write_data() on each of them. 
+This method reads the data from the CSV file and inserts it into the corresponding database table.
+
+Finally, the code checks if it's being run directly (as opposed to being imported as a module) and if 
+so, it calls the main() function to execute the data transfer process.
+
+In simpler terms, it's like setting up different folders (database tables) and copying information 
+(data from CSV files) into each folder according to a predefined plan (data structure). The code ensures
+ that this copying process is done automatically and efficiently.
+'''
+
 def main():
     # courses
     courses_dtype_schema = {
