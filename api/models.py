@@ -76,6 +76,7 @@ class StudentVle(Base):
     date = Column(Integer)
     sum_click = Column(Float)
 
+
 class Vle(Base):
     __tablename__ = 'vle'
 
