@@ -63,7 +63,8 @@ class CopyToDb:
             name=self.table_name,
             con=engine,
             if_exists='replace',
-            dtype=self.dtype_schema
+            dtype=self.dtype_schema,
+            index=False
         )
         log.info(
             f'Data written to {self.table_name} successfully at {datetime.datetime.now()}'
